@@ -1,2 +1,1 @@
-repo: 
-https://github.com/laplace247/lista-tareas.git
+Practica: Lista de Tareas Interactiva con Node.js, DOM y Eventos
