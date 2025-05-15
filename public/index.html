@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tareas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Mi Lista de Tareas</h1>
-    <form id="form-tarea">
-    <input type="text" id="input-tarea" placeholder="Escribe una tarea" required>
+  <h1>Mi Lista de Tareas
+    <button class="tooltip">?
+      <span class="tooltiptext">Haga clic aquí para obtener más información</span>
+    </button>
+  </h1>
+
+  <form id="form-tarea">
+    <input type="text" id="input-tarea" placeholder="Escribe una tarea" required />
     <button type="submit">Agregar</button>
-    </form>
-    <ul id="lista-tareas"></ul>
-    <script src="script.js"></script>
+  </form>
+
+  <ul id="lista-tareas"></ul>
+
+  <script src="script.js"></script>
 </body>
 </html>
