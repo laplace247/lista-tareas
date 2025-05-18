@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lista de Tareas</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <h1>Mi Lista de Tareas
+  <h1>Lista de Tareas
     <button class="tooltip">?
       <span class="tooltiptext">Haga clic aquí para obtener más información</span>
     </button>
@@ -15,7 +16,12 @@
 
   <form id="form-tarea">
     <input type="text" id="input-tarea" placeholder="Escribe una tarea" required />
-    <button type="submit">Agregar</button>
+    <button type="submit" class="btn-icon" aria-label="Agregar">
+    <i class="fas fa-plus"></i>
+    </button>
+    <button id="btn-eliminar-todo" class="btn-delete-all" aria-label="Eliminar todas las tareas">
+    <i class="fas fa-trash-alt"></i>
+  </button>
   </form>
 
   <ul id="lista-tareas"></ul>
