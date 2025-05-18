@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     li.appendChild(botonEliminar);
     lista.appendChild(li);
   }
+  
 
   tareas.forEach(t => crearElementoTarea(t.texto, t.completada));
 
@@ -59,3 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
     input.value = '';
   });
 });
+// btn deletar todo
+document.getElementById('btn-eliminar-todo').addEventListener('click', () => {
+  if (confirm('¿Estás seguro de que quieres eliminar todas las tareas?')) {
+    localStorage.removeItem('tareas');
+    document.getElementById('lista-tareas').innerHTML = '';
+  }
+});
+
